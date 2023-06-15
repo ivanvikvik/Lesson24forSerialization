@@ -1,7 +1,8 @@
+import java.io.Externalizable;
 import java.io.Serializable;
 
-public class Human implements Serializable {
-    public String name;
+public class Human implements Externalizable {
+    transient public String name;
 
     public Human() {
     }
